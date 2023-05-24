@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculadorActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="726dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <TextView
+            android:id="@+id/lblCalculadora"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Calculadora"
+            android:padding="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblMostrarNombreUser"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Usuario: Braulio Ricardo"/>
+
+
+        <EditText
+            android:id="@+id/inputNum1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Numero 1"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/inputNum2"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Numero 2"
+            android:inputType="number" />
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp">
+
+            <Button
+                android:id="@+id/btnSumar"
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="+"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnRestar"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="-"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnMultiplicar"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="*"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnDividir"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="/"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblResultado"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Resultado: "
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+
+            />
+
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:text="Limpiar" />
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:text="Regresar" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
